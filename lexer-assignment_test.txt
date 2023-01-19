@@ -1,0 +1,12 @@
+'testing'
+1234
+csd
+'sdf
+5432
+'this is a longer test to see something else'
+'help \t'
+'newline \n'
+'carriage \r'
+'\\ backslash \\'
+'quote \' end quote \''
+
