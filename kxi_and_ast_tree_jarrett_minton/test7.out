@@ -1,0 +1,132 @@
+CompilationUnit
+. MethodBody
+. . ExpressionStatement
+. . . ExpressionExpression
+. . . . AdditionExpression
+. . . . . NumLitExpression: 1
+. . . . . NumLitExpression: 1
+. . ExpressionStatement
+. . . AssignmentExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . AdditionAssignmentExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . SubtractionAssignmentExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . MultiplicationAssignmentExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . DivisionAssignmentExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . AdditionExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . SubtractionExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . MultiplicationExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . DivisionExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . EqualEqualExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . NotEqualExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . LessThanExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . GreaterThanExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . LessThanEqualExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . GreaterThanEqualExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . AndExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . OrExpression
+. . . . IdentifierExpression: a
+. . . . IdentifierExpression: b
+. . ExpressionStatement
+. . . NotExpression
+. . . . IdentifierExpression: a
+. . ExpressionStatement
+. . . PositiveExpression
+. . . . IdentifierExpression: a
+. . ExpressionStatement
+. . . NegativeExpression
+. . . . IdentifierExpression: a
+. . ExpressionStatement
+. . . NumLitExpression: 12
+. . ExpressionStatement
+. . . CharLitExpression: 'a'
+. . ExpressionStatement
+. . . StrLitExpression: "utah bread"
+. . ExpressionStatement
+. . . TrueExpression: True
+. . ExpressionStatement
+. . . FalseExpression: False
+. . ExpressionStatement
+. . . NullExpression: None
+. . ExpressionStatement
+. . . IdentifierExpression: utah_bread
+. . ExpressionStatement
+. . . NewExpression
+. . . . Type: utahBread
+. . . . Arguments
+. . ExpressionStatement
+. . . NewExpression
+. . . . Type: utahBread
+. . . . Index
+. . . . . NumLitExpression: 1
+. . ExpressionStatement
+. . . NewExpression
+. . . . Type: utahBread
+. . . . Arguments
+. . . . . ArgumentList
+. . . . . . IdentifierExpression: a
+. . . . . . IdentifierExpression: b
+. . . . . . IdentifierExpression: c
+. . ExpressionStatement
+. . . ThisExpression
+. . ExpressionStatement
+. . . DotExpression: bread
+. . . . IdentifierExpression: utah
+. . ExpressionStatement
+. . . ArrayExpression
+. . . . IdentifierExpression: utahbread
+. . . . Index
+. . . . . NumLitExpression: 10
+. . ExpressionStatement
+. . . CallExpression
+. . . . IdentifierExpression: utahbread
+. . . . Arguments
+. . . . . ArgumentList
+. . . . . . IdentifierExpression: a
+. . . . . . IdentifierExpression: b

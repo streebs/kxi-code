@@ -1,0 +1,17 @@
+class MyClass {
+    public int a;
+    public bool b = true;
+
+    public int c(){
+        if (a == b) true; else false;
+    }
+    private char d(){
+        b = a + 1;
+    }
+
+    MyClass(int g){
+        a = g;
+    }
+}
+
+void kxi2022 main (){}

@@ -1,0 +1,39 @@
+void kxi2022 main (){
+    //attempt all expressions
+
+    ( 1 + 1 );
+    a = b;
+    a += b;
+    a -= b;
+    a *= b;
+    a /= b;
+    a + b;
+    a - b;
+    a * b;
+    a / b;
+    a == b;
+    a != b;
+    a < b;
+    a > b;
+    a <= b;
+    a >= b;
+    a && b;
+    a || b;
+    !a;
+    +a;
+    -a;
+    12;
+    'a';
+    "utah bread";
+    true;
+    false;
+    null;
+    utah_bread;
+    new utahBread();
+    new utahBread[1];
+    new utahBread(a, b, c);
+    this;
+    utah.bread;
+    utahbread[10];
+    utahbread(a, b);
+}

@@ -1,0 +1,46 @@
+void kxi2022 main (){
+    //Statements
+
+    // { Statement *}
+    { 
+        break ; 
+        return; 
+    }
+
+    //if ( 〈Expression〉 ) 〈Statement〉 (else 〈Statement〉)?
+    if (a == true) {
+        true;
+    } else {
+        false;
+    }
+    if (true) x = 10;
+
+    //while ( 〈Expression〉 ) 〈Statement〉
+    while( x != z ){
+        z += 1;
+        x = z;
+    }
+
+    //return 〈Expression〉?;
+    return true;
+    return;
+
+    //cout 
+    cout << false;
+    //cin
+    cin >> x;
+
+    //switch and break
+    switch (myVar){
+        case 'a':
+        myVar = 'b';
+        case 'c':
+        myVar = 'b';
+        default :
+        break;
+    }
+
+    //VariableDeclaration been done already
+
+
+}

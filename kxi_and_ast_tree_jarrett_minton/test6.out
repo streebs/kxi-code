@@ -1,0 +1,55 @@
+CompilationUnit
+. MethodBody
+. . StatementStatement
+. . . BreakStatement
+. . . ReturnStatement
+. . IfStatement
+. . . EqualEqualExpression
+. . . . IdentifierExpression: a
+. . . . TrueExpression: True
+. . . StatementStatement
+. . . . ExpressionStatement
+. . . . . TrueExpression: True
+. . . StatementStatement
+. . . . ExpressionStatement
+. . . . . FalseExpression: False
+. . IfStatement
+. . . TrueExpression: True
+. . . ExpressionStatement
+. . . . AssignmentExpression
+. . . . . IdentifierExpression: x
+. . . . . NumLitExpression: 10
+. . WhileStatement
+. . . NotEqualExpression
+. . . . IdentifierExpression: x
+. . . . IdentifierExpression: z
+. . . StatementStatement
+. . . . ExpressionStatement
+. . . . . AdditionAssignmentExpression
+. . . . . . IdentifierExpression: z
+. . . . . . NumLitExpression: 1
+. . . . ExpressionStatement
+. . . . . AssignmentExpression
+. . . . . . IdentifierExpression: x
+. . . . . . IdentifierExpression: z
+. . ReturnStatement
+. . . TrueExpression: True
+. . ReturnStatement
+. . CoutStatement
+. . . FalseExpression: False
+. . CinStatement: 
+. . . IdentifierExpression: x
+. . SwitchStatement
+. . . IdentifierExpression: myVar
+. . . CaseBlock
+. . . . Case'a'
+. . . . . ExpressionStatement
+. . . . . . AssignmentExpression
+. . . . . . . IdentifierExpression: myVar
+. . . . . . . CharLitExpression: 'b'
+. . . . Case'c'
+. . . . . ExpressionStatement
+. . . . . . AssignmentExpression
+. . . . . . . IdentifierExpression: myVar
+. . . . . . . CharLitExpression: 'b'
+. . . . BreakStatement

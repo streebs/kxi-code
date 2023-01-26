@@ -1,0 +1,22 @@
+void kxi2022 main (){
+    bool b;
+    int a = 1 + 2;
+    char char1 = 'c';
+
+    string beef = "beef";
+    string beef_more = "no more \n beef";
+   
+   int array = new int[2];
+   while (array[0] != 10){
+    array[0] += 1;
+    array[1] -= 2;
+   }
+
+   cout << beef;
+
+   cout << this.beans;
+
+   MyClass beef;
+   MyClass beef = 10;
+   array[0];
+}

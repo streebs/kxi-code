@@ -1,0 +1,31 @@
+CompilationUnit
+. ClassDefinition: MyClass
+. . ClassMemberDefinition
+. . . DataMemberDeclaration
+. . . . Modifier: public
+. . . . VariableDeclaration: a
+. . . . . Type: int
+. . ClassMemberDefinition
+. . . DataMemberDeclaration
+. . . . Modifier: public
+. . . . VariableDeclaration: b
+. . . . . Type: bool
+. . . . . Initializer
+. . . . . . TrueExpression: True
+. . ClassMemberDefinition
+. . . MethodDeclaration:c
+. . . . Modifier: public
+. . . . Type: int
+. . . . MethodSuffix
+. . . . . MethodBody
+. . ClassMemberDefinition
+. . . MethodDeclaration:d
+. . . . Modifier: private
+. . . . Type: char
+. . . . MethodSuffix
+. . . . . MethodBody
+. . ClassMemberDefinition
+. . . ConstructorDeclaration:MyClass
+. . . . MethodSuffix
+. . . . . MethodBody
+. MethodBody
