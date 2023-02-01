@@ -1,0 +1,11 @@
+class MyClass {
+    public int a;
+    public bool b = true;
+
+    public int c(){}
+    private char d(){}
+
+    MyClass(){}
+}
+
+void kxi2022 main (){}

@@ -1,0 +1,75 @@
+CompilationUnit
+. MethodBody
+. . VariableDeclarationStatement
+. . . VariableDeclaration: b
+. . . . Type: bool
+. . VariableDeclarationStatement
+. . . VariableDeclaration: a
+. . . . Type: int
+. . . . Initializer
+. . . . . AdditionExpression
+. . . . . . NumLitExpression: 1
+. . . . . . NumLitExpression: 2
+. . VariableDeclarationStatement
+. . . VariableDeclaration: char1
+. . . . Type: char
+. . . . Initializer
+. . . . . CharLitExpression: 'c'
+. . VariableDeclarationStatement
+. . . VariableDeclaration: beef
+. . . . Type: string
+. . . . Initializer
+. . . . . StrLitExpression: "beef"
+. . VariableDeclarationStatement
+. . . VariableDeclaration: beef_more
+. . . . Type: string
+. . . . Initializer
+. . . . . StrLitExpression: "no more \n beef"
+. . VariableDeclarationStatement
+. . . VariableDeclaration: array
+. . . . Type: int
+. . . . Initializer
+. . . . . NewExpression
+. . . . . . Type: int
+. . . . . . Index
+. . . . . . . NumLitExpression: 2
+. . WhileStatement
+. . . NotEqualExpression
+. . . . ArrayExpression
+. . . . . IdentifierExpression: array
+. . . . . Index
+. . . . . . NumLitExpression: 0
+. . . . NumLitExpression: 10
+. . . StatementStatement
+. . . . ExpressionStatement
+. . . . . AdditionAssignmentExpression
+. . . . . . ArrayExpression
+. . . . . . . IdentifierExpression: array
+. . . . . . . Index
+. . . . . . . . NumLitExpression: 0
+. . . . . . NumLitExpression: 1
+. . . . ExpressionStatement
+. . . . . SubtractionAssignmentExpression
+. . . . . . ArrayExpression
+. . . . . . . IdentifierExpression: array
+. . . . . . . Index
+. . . . . . . . NumLitExpression: 1
+. . . . . . NumLitExpression: 2
+. . CoutStatement
+. . . IdentifierExpression: beef
+. . CoutStatement
+. . . DotExpression: beans
+. . . . ThisExpression
+. . VariableDeclarationStatement
+. . . VariableDeclaration: beef
+. . . . Type: MyClass
+. . VariableDeclarationStatement
+. . . VariableDeclaration: beef
+. . . . Type: MyClass
+. . . . Initializer
+. . . . . NumLitExpression: 10
+. . ExpressionStatement
+. . . ArrayExpression
+. . . . IdentifierExpression: array
+. . . . Index
+. . . . . NumLitExpression: 0

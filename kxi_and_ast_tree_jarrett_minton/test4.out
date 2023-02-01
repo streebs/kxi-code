@@ -1,0 +1,52 @@
+CompilationUnit
+. ClassDefinition: MyClass
+. . ClassMemberDefinition
+. . . DataMemberDeclaration
+. . . . Modifier: public
+. . . . VariableDeclaration: a
+. . . . . Type: int
+. . ClassMemberDefinition
+. . . DataMemberDeclaration
+. . . . Modifier: public
+. . . . VariableDeclaration: b
+. . . . . Type: bool
+. . . . . Initializer
+. . . . . . TrueExpression: True
+. . ClassMemberDefinition
+. . . MethodDeclaration:c
+. . . . Modifier: public
+. . . . Type: int
+. . . . MethodSuffix
+. . . . . MethodBody
+. . . . . . IfStatement
+. . . . . . . EqualEqualExpression
+. . . . . . . . IdentifierExpression: a
+. . . . . . . . IdentifierExpression: b
+. . . . . . . ExpressionStatement
+. . . . . . . . TrueExpression: True
+. . . . . . . ExpressionStatement
+. . . . . . . . FalseExpression: False
+. . ClassMemberDefinition
+. . . MethodDeclaration:d
+. . . . Modifier: private
+. . . . Type: char
+. . . . MethodSuffix
+. . . . . MethodBody
+. . . . . . ExpressionStatement
+. . . . . . . AssignmentExpression
+. . . . . . . . IdentifierExpression: b
+. . . . . . . . AdditionExpression
+. . . . . . . . . IdentifierExpression: a
+. . . . . . . . . NumLitExpression: 1
+. . ClassMemberDefinition
+. . . ConstructorDeclaration:MyClass
+. . . . MethodSuffix
+. . . . . ParameterList
+. . . . . . Parameter: g
+. . . . . . . Type: int
+. . . . . MethodBody
+. . . . . . ExpressionStatement
+. . . . . . . AssignmentExpression
+. . . . . . . . IdentifierExpression: a
+. . . . . . . . IdentifierExpression: g
+. MethodBody
