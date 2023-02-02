@@ -1,0 +1,5 @@
+void kxi2022 main()
+{
+    cout << "Hello World!\n";
+    return;
+}
