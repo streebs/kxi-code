@@ -1,0 +1,249 @@
+// Steven Iverson
+// UVU Compiler class, Spring 2009
+//
+// The purpose of this file to test
+// all (or most) of the productions that are related to "variable_declaration"
+// The point is to completely abuse the parser.
+//
+// Virtually all combinations of acceptable tokens are tested.
+//
+// This will also test to some extent productions related to objects and classes.
+//
+// ***** THIS FILE SHOULD PARSE SUCCESSFULLY ****
+//
+// According to our grammar this file should parse without any errors.
+// (I'm pretty sure that all that statements are valid)
+// However, there are obviously many semantic errors.
+// Some of these statements are a bit extreme
+// but they are allowed by the grammar.
+//
+
+// First test some of the class and object productions
+// Note: this is a is not a complete test of all class related productions
+// but it tests them pretty thoroughly
+
+
+class Test
+{
+    public int classVariable1;
+	public void classVariable2;
+	public int classVariable3;
+	private int [] classVariable4 = new int[55];
+    public char [] classVariable5 = new int[-51];
+	private int [] classVariable6 = new int[asdf];
+	public void []classVariable7 = new int['a'];
+	private int[] classVariable8 = new int[true || 55 || (classVar.Function(-55))];
+
+	Test()
+	{
+	}
+
+	Test(int a, char b)
+	{
+	    int c = 5;
+		void[] array;
+		void[] array = new int[55];
+
+		// ****** tricky here but still valid ************
+
+		void junk1 = new int[55];
+		int junk2 = new int();
+		int junk2 = new int(55);
+		//int junk2 = new int(true, -55, asdf, false, true || null);
+		//bool junk3 = new Test(true || false || asdf && null || (test.Function('a')));
+	}
+
+    public void Func1()
+    {
+	    char c;
+	    int[] array;
+		int[] array2 = new int[10];
+
+		c = 'a';
+
+		// our grammer allows this.
+	    // And so does the C/C++ languages if the variable "e" is defined
+		e;
+
+        55 = -55; // valid as well
+    }
+
+    public void Func2(int a, int b)
+    {
+	    //Test obj;
+		int a;
+    }
+
+	public void Func3(char c, void b)
+    {
+	    //Test obj = new Test();
+    }
+}
+
+class TestTwo
+{
+    private char memeberVarThree;
+
+    public void FuncThree(char j)
+    {
+        int k;
+    }
+}
+
+class TestThree
+{
+    TestThree()
+	{
+	}
+
+	public void FuncFour( ) //TestTwo bb)
+	{
+	    int b;
+		int c;
+
+		TestThree c;
+
+		bb = new TestThree();
+	}
+}
+
+void kxi2022 main()
+{
+    // Test all productions related to
+	// variable_declaration. The productions tested are:
+	//
+    // variable_declaration
+    // argument list
+    // expression
+    // fn_arr_member
+    // argument_list
+    // member_refz
+    // expressionz
+    // assignment_expression
+    // new_declaration
+	//
+	//  (I think that's a complete list)
+	//
+
+    int var1;
+    bool var2;
+    void var3;
+    char var4;
+
+    int[] var5;
+    bool[] var6;
+    void[] var7;
+    char[] var8;
+
+    void var9 = 5;
+    char var10 = 'a';
+    bool var11 = true;
+    int var12 = 5;
+
+    int var13 = this;
+    bool var14 = this;
+    int var15 = new int();
+    int var16 = new int(var1);
+    int var17 = new int(var1, var2, var3);
+    int[] var18 = new int[5];
+    int var19 = atoi('a');
+    int var20 = atoi(5);
+    int var21 = atoi(a);
+    bool var22 = itoa(5512);
+    bool var23 = itoa(-5512);
+    char var24 = itoa(5);
+    void[] var25 = atoi('5');
+
+    int var26 = (var2);
+    int var27 = var2;
+    bool va28 = true;
+    bool var29 = false;
+    int var30 = false;
+    void var31 = null;
+    int var32 = null;
+    int var33 = 123;
+    int var34 = -123;
+    char var35 = 'a';
+    void var36 = 'a';
+    char var37 = var1;
+
+    // optional expression parts
+    int var38 = (true) = var2;
+    int var39= (false) && var2;
+    int var40 = (null) || var2;
+    int var41 = (123) != var2;
+    int var42 = ('a') <= var2;
+    int var43 = (var1) >= var2;
+    int var44 = (55) < var2;
+    int var45 = (var1) > var2;
+    int var46 = (null) + var2;
+
+    int var47 = ('a') - var2;
+    int var48 = (var1) * var2;
+    int var49 = (55) / var2;
+    //int var50 = (var1) % var2;
+
+    int var51 = ('a') - true;
+    int var52 = (var1) * null;
+    int var53 = (55) / 55;
+    //int var54 = (var1) % 'a';
+
+    int var55 = (var1) == 'a';
+    int var56 = (var1) || 'a';
+    int var57 = (var1) < var1;
+
+
+    int var58 = ('a') - (55) || 55;
+    int var59 = (var1) * ('a') || 'a';
+    int var60 = (55) / (null) || var1;
+    //int var61 = (var1) % (true) || null;
+
+    int var62 = true != true;
+    int var63 = false <= null;
+    int var64 = null > (null) && false;
+    int var65 = 512 && true;
+    int var66 = 'a' == var1;
+    int var67 = var1 + true;
+
+    int var68 = var1 + (true) && (null) || 55;
+
+    // test fn_arr_member and member_refz
+    int var69 = var1 != (var2);
+    char var70 = var5();
+    char var71 = var5(var1);
+    char var72 = var5(var1, var2, var3);
+    char var73 = var5[5];
+    char var74 = var5[true];
+    char var75 = var5[(true) != null];
+    char var76 = var5[null];
+    char var77 = var5['a'];
+
+    int var78 = var3.var1.var5;
+    void var79 = var1.var2;
+    void var80 = var1.var2();
+    void var81 = var1.var2(var1);
+    void var82 = var1.var2(var2, var3, var5);
+    int var83 = var1.var2['a'];
+    int var84 = var1.var2[5];
+    void var85 = var1.var2(var3).var3[5];
+    char var86 = var1.var5.var6.var5.var8;
+    char var87 = var1.var5.var6.var5.var8[5];
+    char var88 = var1.var5.var6.var5.var8();
+    void var89 = var1.var5.var6(5).var5.var8();
+    char var90 = var1['a'].var5.var6(5).var5['a'].var8();
+    bool var91 = var1[true].var5.var6(5).var5['a'].var8();
+
+    char var92 = var1.var5.var6.var5.var8[5] && (true);
+    char var93 = var1.var5.var6.var5.var8[5] + 55;
+    char var94 = var1.var5.var6.var5.var8[5] || null;
+    char var95 = var1.var5.var6.var5.var8[5] || (null) && null;
+    char var96 = var1.var5.var6.var5.var8[5] || (null) + var1;
+
+    int var97 = true = this;
+    int var98 = false = atoi('a');
+    int var99 = null = itoa(55);
+    int var100 = true = (true) && (false) || null && 55 && -12 && 'a' || variable55.function(55) || null;
+
+    //int var101 = var1(var2)[55].var2 || (true);
+	int var102 = +15;
+}
