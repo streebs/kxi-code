@@ -107,7 +107,7 @@ class TestThree
 	}
 }
 
-void kxi2022 main()
+void kxi2023 main()
 {
     // Test all productions related to
 	// variable_declaration. The productions tested are:
