@@ -34,10 +34,6 @@ class Test
 	public void []classVariable7 = new int['a'];
 	private int[] classVariable8 = new int[true || 55 || (classVar.Function(-55))];
 
-	Test()
-	{
-	}
-
 	Test(int a, char b)
 	{
 	    int c = 5;
@@ -49,8 +45,8 @@ class Test
 		void junk1 = new int[55];
 		int junk2 = new int();
 		int junk2 = new int(55);
-		//int junk2 = new int(true, -55, asdf, false, true || null);
-		//bool junk3 = new Test(true || false || asdf && null || (test.Function('a')));
+		int junk2 = new int(true, -55, asdf, false, true || null);
+		bool junk3 = new Test(true || false || asdf && null || (test.Function('a')));
 	}
 
     public void Func1()
@@ -66,23 +62,59 @@ class Test
 		e;
 
         55 = -55; // valid as well
+
+        switch(var102) {
+            case 1: 
+                int var62 = true != true;
+                break;
+            case 'b':
+                char var77 = var5['a'];
+                break;
+            case 3:
+                char var92 = var1.var5.var6.var5.var8[5] && (true);
+                break;
+            default:
+                char y = 'x';
+                break;
+        }
+
+        if(true) {
+            int i = 5;
+            Test a = new Test();
+        } else {
+            Test b = new Test();
+        }
+
+        while (true) {
+            int i = 4;
+            Test c = new Test();
+        }
+
+        cout << 5;
+        cin >> i;
+
+        this.run();
     }
 
     public void Func2(int a, int b)
     {
-	    //Test obj;
+	    Test obj;
 		int a;
     }
 
 	public void Func3(char c, void b)
     {
-	    //Test obj = new Test();
+	    Test obj = new Test();
     }
 }
 
 class TestTwo
 {
     private char memeberVarThree;
+
+    TestTow() 
+    {
+    }
 
     public void FuncThree(char j)
     {
@@ -96,7 +128,7 @@ class TestThree
 	{
 	}
 
-	public void FuncFour( ) //TestTwo bb)
+	public void FuncFour(TestTwo bb)
 	{
 	    int b;
 		int c;
@@ -244,6 +276,6 @@ void kxi2023 main()
     int var99 = null = itoa(55);
     int var100 = true = (true) && (false) || null && 55 && -12 && 'a' || variable55.function(55) || null;
 
-    //int var101 = var1(var2)[55].var2 || (true);
+    int var101 = var1(var4.var2 || (true));
 	int var102 = +15;
 }
