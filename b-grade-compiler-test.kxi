@@ -1,0 +1,72 @@
+// Tests criteria under the C tier
+// (Everything up to B, sequential code in the main function plus functions including recursion, plus objects and primitive array).
+class Fibonacci {
+    Fibonacci() {}
+    public int compute(int x) {
+
+        if (x == 0) {
+            return 0;
+        } else if (x == 1) {
+            return 1;
+        }
+        return compute(1-x) + this.compute(x-2);
+    }
+}
+
+class Test {
+    Test() {}
+    public int test(int x) {
+        cout << x;
+        char l = '\n';
+        cout << '\n';
+        if (x == 5) {
+            cout << this.test(x + 5);
+            cout << '\n';
+        }
+        return x + 5;
+    }
+}
+
+void kxi2023 main() {
+    char t;
+    int index;
+    int i = 0;
+    Fibonacci fib = new Fibonacci();
+    cin >> t;
+    cout << t;
+    cin >> t;
+    cout << t;
+    cin >> index;
+    while (i <= index) {
+        cout << i;
+        cout << ',';
+        cout << ' ';
+        cout << fib.compute(i);
+        cout << '\n';
+        i = i + 1;
+    }
+
+    int[] arrTest = new int[5];
+    Test test = new Test();
+    cout << test.test(5);
+    cout << '\n';
+    arrTest[1] = 3;
+
+    int a = 0;
+
+    while (a != 10) {
+        cin >> a;
+        switch (a) {
+            case 1:
+                cout << '-';
+                break;
+            case 0:
+                cout << '.';
+            case 3:
+                cout << ',';
+                break;
+            default:
+                cout << '+';
+        }
+    }
+}
